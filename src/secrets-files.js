@@ -7,10 +7,10 @@ const DEFAULT_JS_PATH = path.join(SECRETS_FOLDER, ".secrets.enc.js");
 const DEFAULT_FILE_PATH = path.join(SECRETS_FOLDER, ".secrets.enc.json");
 
 // eslint-disable-next-line security/detect-non-literal-fs-filename
-if (!fs.existsSync(SECRETS_FOLDER)) {
-  // eslint-disable-next-line security/detect-non-literal-fs-filename
-  fs.mkdirSync(SECRETS_FOLDER);
-}
+// if (!fs.existsSync(SECRETS_FOLDER)) {
+//   // eslint-disable-next-line security/detect-non-literal-fs-filename
+//   fs.mkdirSync(SECRETS_FOLDER);
+// }
 
 /**
  * Encapsulate encrypted secrets in a JS module for easy runtime access.
